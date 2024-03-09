@@ -22,7 +22,7 @@ jobs:
       run: |
         az deployment group create --name "deploy-web-app" \
                                     --resource-group "your-resource-group-name" \
-                                    --template-file "./deploy/webapp.bicep" \
+                                    --template-file "./deploy/testbicep.bicep" \
                                     --parameters environmentType=nonprod
 
     - name: Run tests
